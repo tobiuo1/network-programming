@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>開志専門職大学</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <li><a href="toiawase.html">お問い合わせはこちら</a></li>
+    <li><a href="campus.html">大学風景はこちら</a></li>
+    <li><a href="https://kaishi-pu.ac.jp/">ホームページはこちら</a></li>
+</body>
+
+<body>
+    <button onclick="黒い()">ダークモード</button>
+    <script>
+        function 黒い(){
+            document.body.classList.toggle("dark")
+        }
+    </script>
+    <div class="section">
+        <img src="images/coffee-house.png" alt="開志専門職大学">
+        <div class="text">
+            <h1>開志専門職大学</h1>
+            <p>新潟県新潟市中央区紫竹山6丁目3-5</p>
+            <p>新潟県新潟市中央区古町通7番地1010</p>
+            <p>025-(240)-8118</p>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <input type="radio" name="tab" id="jouhou" checked>
+        <label for="jouhou">💻情報学部</label>
+
+        <input type="radio" name="tab" id="zigyou">
+        <label for="zigyou">🏢事業創造学部</label>
+
+        <input type="radio" name="tab" id="anime">
+        <label for="anime">🖼アニメ・マンガ学部</label>
+
+        <input type="radio" name="tab" id="address">
+        <label for="address">🏠住所</label>
+
+        <div class="content" id="content-jouhou">
+            <h2>情報学部</h2>
+            <ul>
+                <li>AI・データサイエンティストコース <img src="imsges/AI.jpg" width="200"></li>
+                <li>IoT・ロボティクスエンジニアコース <img src="imsges/IoT.jpg" width="200"></li>
+                <li>クラウドエンジニアコース <img src="imsges/クラウド.jpg" width="200"></li>
+                <li>サイバーセキュリティコース <img src="imsges/サイバー.jpg" width="200"></li>
+                <li>ゲームコース <img src="imsges/ゲーム.jpg" width="200"></li>
+                <li>デジタル・ビジネスコース <img src="imsges/デジタル.jpg" width="200"></li>
+            </ul>
+        </div>
+
+        <div class="content" id="content-zigyou">
+            <h2>事業創造学部</h2>
+            <ul>
+                <li>起業家コース <img src="imsges/起業家.jpg" width="200"></li>
+                <li>経営デザインコース <img src="imsges/経営.jpg" width="200"></li>
+            </ul>
+        </div>
+
+        <div class="content" id="content-anime">
+            <h2>アニメ・マンガ学部</h2>
+            <ul>
+                <li>アニメ分野 <img src="imsges/アニメ.png" width="200"></li>
+                <li>マンガ分野 <img src="imsges/マンガ.png" width="200"></li>
+                <li>キャラクターデザイン分野 <img src="imsges/キャラ.png" width="200"></li>
+            </ul>
+        </div>
+
+        <div class="content" id="content-address">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.4186784508424!2d139.06429767608645!3d37.897275482824206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4c978b4a16a9d%3A0xe443a08c19587fa7!2z6ZaL5b-X5bCC6ZaA6IG35aSn5a2m!5e0!3m2!1sja!2sjp!4v1776993717676!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>住所</h2>
+            <p>新潟県新潟市中央区紫竹山6丁目3-5<br>新潟県新潟市中央区古町通7番地1010</p>
+        </div>
+    </div>
+    <footer>
+        <p>開志専門職大学</p>
+        <p>新潟県新潟市中央区紫竹山6丁目3-5</p>
+        <p>新潟県新潟市中央区古町通7番地1010</p>
+        <p>電話番号 025-(240)-8118</p>
+    </footer>
+</body>
+</html>
