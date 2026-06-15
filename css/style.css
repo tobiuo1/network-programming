@@ -1,0 +1,116 @@
+.section {
+    display: flex;
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+}
+
+.section .text{
+    margin: 5px;
+    font-size: 30px;
+    color: rgb(225, 101, 0);
+}
+
+.section img{
+    height: 250px;
+    margin-left: 220;
+    border-radius: 3em;
+}
+
+.tabs{
+    max-width: 800px;
+    margin: auto;
+}
+
+.tabs input{
+    display: none;
+}
+
+.tabs label{
+    display: inline-block;
+    padding: 10px 15px;
+    background: #f29e5e;
+    color: white;
+    margin-right: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tabs label:hover{
+    background: #eb8d53;
+}
+
+.content{
+    display: none;
+    padding: 20px;
+    background: #fffefc;
+    border: 1px solid #ddd;
+}
+
+#jouhou:checked ~ #content-jouhou,
+#zigyou:checked ~ #content-zigyou,
+#anime:checked ~ #content-anime,
+#address:checked ~ #content-address{
+    display: block;
+}
+
+footer{
+    text-align: center;
+    background: #ef630d;
+    color: white;
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 30px;
+    line-height: 2;
+}
+
+.section .text{
+    animation: アニメ 3s ease-out;
+}
+@keyframes アニメ{
+    from{opacity: 0; transform: translateY(20px);}
+    to{opacity: 1; transform: translateY(0);}
+}
+
+.content ul li{
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    transition:transform 0.2s;
+    cursor: pointer;
+}
+
+.content ul li:hover{
+    transform: translateY(-4px);
+    background: #ddd;
+}
+
+body.dark{
+    background: rgb(236, 177, 117);
+    color: black;
+}
+
+body.dark.content{
+    background-color: #e0782d;
+    border: #ddd;
+}
+
+body.dark.content ul li{
+    background-color: #d97b2e;
+    color: white;
+}
+
+body.dark.tabs{
+    background-color: #e37832;
+    color: white;
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    background: #d26e21;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
